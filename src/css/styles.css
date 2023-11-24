@@ -1,0 +1,162 @@
+h1, h2{
+  text-align: center;
+}
+.user-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  width: calc(100% - 30px);
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.user-card:hover {
+  background-color: #f5f5f5;
+}
+
+.user-name, .user-catch-phrase{
+
+  font-weight: bold;
+  text-align: center;
+}
+
+.post-count {
+  margin-top: 10px;
+  color: #888;
+  text-align: center;
+}
+
+/* Additional styles for responsive design */
+@media (max-width: 767px) {
+  .user-card {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Upper Segment */
+.upper-segment {
+  background-color: #74b9ff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Clock Section */
+.clock-section {
+  text-align: center;
+}
+
+.clock {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+  padding: 10px;
+  border: 2px solid #0984e3;
+  border-radius: 5px;
+}
+
+/* Country Selector */
+.country-selector {
+  display: flex;
+  align-items: center;
+}
+
+.country-selector label {
+  margin-right: 10px;
+}
+
+/* User Details */
+.user-details {
+  margin: 20px;
+}
+
+.user-info {
+  background-color: #dfe6e9;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+
+.user-contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.contact-label {
+  font-weight: bold;
+}
+
+.contact-info {
+  border: 1px solid #dfe6e9;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+/* Posts Container */
+.posts-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.post {
+  width: calc(33.33% - 20px);
+  box-sizing: border-box;
+  padding: 15px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background-color: #55efc4;
+  border-radius: 5px;
+}
+
+/* Popup */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 80%;
+  max-height: 80%;
+  overflow-y: auto;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 10px;
+  background-color: #e74c3c;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .posts-container {
+    flex-direction: column;
+  }
+}
